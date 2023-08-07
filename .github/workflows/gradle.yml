@@ -40,5 +40,5 @@ jobs:
 
     - uses: actions/upload-artifact@v3
       with:
-        name: my-artifact
-        path: sjpp/build/libs
+        name: sjpp.jar
+        path: sjpp/build/libs/sjpp.jar
