@@ -37,4 +37,5 @@ jobs:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
           files: |
-            *.jar
+            LICENSE
+            sjpp/build/libs/sjpp.jar
