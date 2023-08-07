@@ -19,7 +19,7 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
-      - uses: ./.github/workflows/gradle.yml
+      - uses: .github/workflows/gradle.yml
 
   tagged-release:
     name: "Tagged Release"
