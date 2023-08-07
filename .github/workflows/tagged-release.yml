@@ -10,3 +10,18 @@ on:
 jobs:
   call-build:
     uses: ./.github/workflows/gradle.yml
+
+  release:
+    needs: call-build
+
+    name: "Release"
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          files: |
+            LICENSE
+            sjpp/build/libs/sjpp.jar
