@@ -9,10 +9,4 @@ on:
 
 jobs:
   call-build:
-    name: Call build
-    runs-on: "ubuntu-latest"
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - uses: .github/workflows/gradle.yml
+    uses: ./.github/workflows/gradle.yml
